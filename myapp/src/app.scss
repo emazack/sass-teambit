@@ -1,24 +1,73 @@
-header{
-  background-color: red;
+@mixin my-display-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin my-container-dimension{
+  height: 80%;
+  width: 80%;
+}
+
+$bg-primary-color: #FFFFFF;
+$bg-secondary-color: #FFE7D2;
+$text-primary-color: #58402C;
+$text-link-color: #2E4691;
+
+header {
+  background-color: $bg-primary-color;
   height: 300px;
+  @include my-display-flex;
+
+  .container{
+    background-color: black;
+    @include my-container-dimension;
+  }
 }
 
 #bloccoUno{
-  background-color: green;
+  background-color: $bg-secondary-color;
   height: 300px;
+  @include my-display-flex;
+
+  .container{
+    background-color: black;
+    @include my-container-dimension;
+  }
+
 }
 
 #bloccoDue{
-  background-color: blue;
+  background-color: $bg-primary-color;
   height: 300px;
+  @include my-display-flex;
+
+  .container{
+    background-color: black;
+    @include my-container-dimension;
+  }
+
 }
 
 #bloccoTre{
-  background-color: white;
+  background-color: $bg-secondary-color;
   height: 300px;
+  @include my-display-flex;
+
+  .container{
+    background-color: black;
+    @include my-container-dimension;
+  }
+
 }
 
 footer{
-  background-color: black;
+  background-color: $bg-primary-color;
   height: 300px;
+  @include my-display-flex;
+
+  .container{
+    background-color: black;
+    @include my-container-dimension;
+  }
 }

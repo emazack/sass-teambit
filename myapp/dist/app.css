@@ -1,25 +1,70 @@
 header {
-  background-color: red;
+  background-color: #FFFFFF;
   height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .container {
+  background-color: black;
+  height: 80%;
+  width: 80%;
 }
 
 #bloccoUno {
-  background-color: green;
+  background-color: #FFE7D2;
   height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bloccoUno .container {
+  background-color: black;
+  height: 80%;
+  width: 80%;
 }
 
 #bloccoDue {
-  background-color: blue;
+  background-color: #FFFFFF;
   height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bloccoDue .container {
+  background-color: black;
+  height: 80%;
+  width: 80%;
 }
 
 #bloccoTre {
-  background-color: white;
+  background-color: #FFE7D2;
   height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bloccoTre .container {
+  background-color: black;
+  height: 80%;
+  width: 80%;
 }
 
 footer {
-  background-color: black;
+  background-color: #FFFFFF;
   height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container {
+  background-color: black;
+  height: 80%;
+  width: 80%;
 }
 
