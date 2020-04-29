@@ -2,25 +2,25 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "HarmoniaSansProCyr-Regular", Arial, sans-serif;
 }
 
 header {
   background-color: #FFFFFF;
-  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 header .container {
-  background-color: black;
   height: 80%;
   width: 80%;
 }
 
 header .container nav {
-  background-color: grey;
   min-height: 35%;
+  border-bottom: 1px solid #58402C;
+  color: #58402C;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,6 +32,10 @@ header .container nav .logo-bar {
   align-items: center;
   width: 50%;
   justify-content: flex-start;
+}
+
+header .container nav .logo-bar h1 {
+  padding-left: 10px;
 }
 
 header .container nav .menu-bar {
@@ -52,6 +56,16 @@ header .container nav .menu-bar ul li {
 
 header .container nav .menu-bar ul button {
   margin-right: 35px;
+}
+
+header .container #jumbotron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .container #jumbotron .right-jumbo img {
+  width: 570px;
 }
 
 #bloccoUno {

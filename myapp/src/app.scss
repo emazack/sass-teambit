@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'HarmoniaSansProCyr-Regular',Arial,sans-serif;
 }
 
 @mixin my-display-flex{
@@ -22,22 +23,25 @@ $text-link-color: #2E4691;
 
 header {
   background-color: $bg-primary-color;
-  height: 300px;
   @include my-display-flex;
 
   .container{
-    background-color: black;
     @include my-container-dimension;
 
     nav{
-      background-color: grey;
       min-height: 35%;
+      border-bottom: 1px solid $text-primary-color;
+      color: $text-primary-color;
       @include my-display-flex;
 
       .logo-bar{
         @include my-display-flex;
         width: 50%;
         justify-content: flex-start;
+
+        h1{
+          padding-left: 10px;
+        }
       }
       .menu-bar{
         width: 50%;
@@ -53,11 +57,33 @@ header {
           button{
             margin-right:35px;
           }
+
+        } //ul
+
+      } //menubar
+
+    } //nav
+
+    #jumbotron{
+      @include my-display-flex;
+      .left-jumbo {
+
+
+      } // left-jumbo
+
+      .right-jumbo {
+
+        img{
+          width: 570px;
         }
-      }
-    }
-  }
-}
+
+      } //right-jumbo
+
+    } // jumbotron
+
+  } // container
+
+} //header
 
 #bloccoUno{
   background-color: $bg-secondary-color;
