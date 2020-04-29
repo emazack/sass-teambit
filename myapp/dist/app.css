@@ -1,0 +1,25 @@
+header {
+  background-color: red;
+  height: 300px;
+}
+
+#bloccoUno {
+  background-color: green;
+  height: 300px;
+}
+
+#bloccoDue {
+  background-color: blue;
+  height: 300px;
+}
+
+#bloccoTre {
+  background-color: white;
+  height: 300px;
+}
+
+footer {
+  background-color: black;
+  height: 300px;
+}
+
