@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 @mixin my-display-flex{
   display: flex;
   justify-content: center;
@@ -22,6 +28,34 @@ header {
   .container{
     background-color: black;
     @include my-container-dimension;
+
+    nav{
+      background-color: grey;
+      min-height: 35%;
+      @include my-display-flex;
+
+      .logo-bar{
+        @include my-display-flex;
+        width: 50%;
+        justify-content: flex-start;
+      }
+      .menu-bar{
+        width: 50%;
+        ul{
+          @include my-display-flex;
+          justify-content: flex-end;
+          list-style: none;
+
+          li{
+            padding-right: 35px;
+          }
+
+          button{
+            margin-right:35px;
+          }
+        }
+      }
+    }
   }
 }
 

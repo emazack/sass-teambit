@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 header {
   background-color: #FFFFFF;
   height: 300px;
@@ -10,6 +16,42 @@ header .container {
   background-color: black;
   height: 80%;
   width: 80%;
+}
+
+header .container nav {
+  background-color: grey;
+  min-height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .container nav .logo-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-start;
+}
+
+header .container nav .menu-bar {
+  width: 50%;
+}
+
+header .container nav .menu-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+header .container nav .menu-bar ul li {
+  padding-right: 35px;
+}
+
+header .container nav .menu-bar ul button {
+  margin-right: 35px;
 }
 
 #bloccoUno {
