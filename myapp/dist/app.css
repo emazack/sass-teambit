@@ -10,6 +10,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px 250px;
 }
 
 header .container {
@@ -70,16 +71,51 @@ header .container #jumbotron .right-jumbo img {
 
 #bloccoUno {
   background-color: #FFE7D2;
-  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 250px;
+  text-align: center;
+}
+
+#bloccoUno .container {
+  height: 80%;
+  width: 80%;
+}
+
+#bloccoUno .container > * {
+  padding: 50px 150px;
+}
+
+#bloccoUno .container .immagini-mini-bloccoUno {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#bloccoUno .container {
-  background-color: black;
-  height: 80%;
-  width: 80%;
+#bloccoUno .container .immagini-mini-bloccoUno .bloccoimmagine {
+  justify-content: center;
+}
+
+#bloccoUno .container .immagini-mini-bloccoUno .bloccoimmagine > * {
+  padding-bottom: 20px;
+}
+
+#bloccoUno .container .immagini-mini-bloccoUno .bloccoimmagine img {
+  max-width: 50%;
+}
+
+#bloccoUno .container .immagini-mini-bloccoUno .bloccoimmagine #gattoscudo {
+  max-width: 28%;
+}
+
+#bloccoUno .container .immaginegrande:nth-child(3) {
+  border-bottom: 1px solid #58402C;
+}
+
+#bloccoUno .container .immaginegrande img {
+  width: 280px;
+  padding-right: 15px;
 }
 
 #bloccoDue {

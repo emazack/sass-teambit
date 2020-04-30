@@ -16,14 +16,25 @@
   width: 80%;
 }
 
+@mixin my-padding-container-stretto{
+  padding: 50px 250px;
+}
+
+// COLORS
+
 $bg-primary-color: #FFFFFF;
 $bg-secondary-color: #FFE7D2;
 $text-primary-color: #58402C;
 $text-link-color: #2E4691;
 
+// FONTS SIZE
+
+
+
 header {
   background-color: $bg-primary-color;
   @include my-display-flex;
+  @include my-padding-container-stretto;
 
   .container{
     @include my-container-dimension;
@@ -85,15 +96,59 @@ header {
 
 } //header
 
+// *************************** BLOCCO UNO ***************************
+
 #bloccoUno{
   background-color: $bg-secondary-color;
-  height: 300px;
   @include my-display-flex;
+  @include my-padding-container-stretto;
+  text-align: center;
 
   .container{
-    background-color: black;
     @include my-container-dimension;
-  }
+
+    & > *{
+      padding: 50px 150px;
+    }
+
+    .immagini-mini-bloccoUno{
+      @include my-display-flex;
+
+      .bloccoimmagine{
+        justify-content: center;
+
+        & > *{
+          padding-bottom: 20px;
+        }
+
+        img{
+          max-width: 50%;
+
+        }
+
+        #gattoscudo{
+          max-width: 28%;
+
+        }
+
+      } // bloccoimmagine
+
+    } // immagini-mini-bloccoUno
+
+    .immaginegrande{
+
+      &:nth-child(3){
+        border-bottom: 1px solid $text-primary-color;
+      }
+
+      img{
+        width: 280px;
+        padding-right: 15px;
+      }
+
+    } // immagine grande
+
+  } // container
 
 }
 
