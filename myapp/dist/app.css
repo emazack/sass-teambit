@@ -152,28 +152,24 @@ header .container #jumbotron .right-jumbo img {
 
 #bloccoTre {
   background-color: #FFE7D2;
-  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #bloccoTre .container {
-  background-color: black;
   height: 80%;
   width: 80%;
 }
 
 footer {
   background-color: #FFFFFF;
-  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 footer .container {
-  background-color: black;
   height: 80%;
   width: 80%;
 }

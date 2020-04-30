@@ -33,11 +33,14 @@ $text-link-color: #2E4691;
 $img-medium-size: 280px;
 $img-large-size: 768px;
 
+
+// Regole GENERALI
 .immaginemedia{
   width: $img-medium-size;
 }
 
 
+//  ***************************BLOCCO header**************************
 
 header {
   background-color: $bg-primary-color;
@@ -160,6 +163,8 @@ header {
 
 }
 
+// *************************** BLOCCO DUE ***************************
+
 #bloccoDue{
   background-color: $bg-primary-color;
   @include my-display-flex;
@@ -185,25 +190,25 @@ header {
 
 } // blocco due
 
+// // *************************** BLOCCO TRE ***************************
+
 #bloccoTre{
   background-color: $bg-secondary-color;
-  height: 300px;
   @include my-display-flex;
 
   .container{
-    background-color: black;
     @include my-container-dimension;
   }
 
 }
 
+// *************************** BLOCCO FOOTER ***************************
+
 footer{
   background-color: $bg-primary-color;
-  height: 300px;
   @include my-display-flex;
 
   .container{
-    background-color: black;
     @include my-container-dimension;
   }
 }
