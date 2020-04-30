@@ -155,11 +155,32 @@ header .container #jumbotron .right-jumbo img {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px 250px;
 }
 
 #bloccoTre .container {
   height: 80%;
   width: 80%;
+  text-align: center;
+  padding: 0px 220px;
+}
+
+#bloccoTre .container > div {
+  padding: 50px 150px;
+}
+
+#bloccoTre .container .lettera-founder {
+  text-align: left;
+  background-color: white;
+  padding: 20px;
+}
+
+#bloccoTre .container .lettera-founder .minifooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  justify-content: flex-start;
 }
 
 footer {
@@ -167,6 +188,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px 250px;
 }
 
 footer .container {

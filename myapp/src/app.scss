@@ -195,9 +195,32 @@ header {
 #bloccoTre{
   background-color: $bg-secondary-color;
   @include my-display-flex;
+  @include my-padding-container-stretto;
 
   .container{
     @include my-container-dimension;
+    text-align: center;
+    padding: 0px 220px;
+
+    & > div{
+      padding: 50px 150px;
+    }
+
+    .lettera-founder{
+      text-align: left;
+      background-color: white;
+      padding: 20px;
+
+      .minifooter{
+        @include my-display-flex;
+        padding-top: 20px;
+        justify-content: flex-start;
+
+      }
+
+
+
+    }
   }
 
 }
@@ -207,8 +230,10 @@ header {
 footer{
   background-color: $bg-primary-color;
   @include my-display-flex;
+  @include my-padding-container-stretto;
 
   .container{
     @include my-container-dimension;
+
   }
 }
