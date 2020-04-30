@@ -29,6 +29,14 @@ $text-link-color: #2E4691;
 
 // FONTS SIZE
 
+// SIZE IMAGE width
+$img-medium-size: 280px;
+$img-large-size: 768px;
+
+.immaginemedia{
+  width: $img-medium-size;
+}
+
 
 
 header {
@@ -135,14 +143,14 @@ header {
 
     } // immagini-mini-bloccoUno
 
-    .immaginegrande{
+    .blocco-immagine-media{
 
       &:nth-child(3){
         border-bottom: 1px solid $text-primary-color;
       }
 
       img{
-        width: 280px;
+        width: $img-medium-size;
         padding-right: 15px;
       }
 
@@ -154,15 +162,28 @@ header {
 
 #bloccoDue{
   background-color: $bg-primary-color;
-  height: 300px;
   @include my-display-flex;
 
-  .container{
-    background-color: black;
-    @include my-container-dimension;
+  .screenshot{
+    width: $img-large-size;
   }
 
-}
+  .container{
+    @include my-container-dimension;
+
+    .screenshot-testodx{
+      @include my-display-flex;
+
+    } // dx
+
+    .screenshot-testosx{
+      @include my-display-flex;
+
+    } // sx
+
+  } // container
+
+} // blocco due
 
 #bloccoTre{
   background-color: $bg-secondary-color;

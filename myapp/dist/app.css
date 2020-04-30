@@ -5,6 +5,10 @@
   font-family: "HarmoniaSansProCyr-Regular", Arial, sans-serif;
 }
 
+.immaginemedia {
+  width: 280px;
+}
+
 header {
   background-color: #FFFFFF;
   display: flex;
@@ -109,27 +113,41 @@ header .container #jumbotron .right-jumbo img {
   max-width: 28%;
 }
 
-#bloccoUno .container .immaginegrande:nth-child(3) {
+#bloccoUno .container .blocco-immagine-media:nth-child(3) {
   border-bottom: 1px solid #58402C;
 }
 
-#bloccoUno .container .immaginegrande img {
+#bloccoUno .container .blocco-immagine-media img {
   width: 280px;
   padding-right: 15px;
 }
 
 #bloccoDue {
   background-color: #FFFFFF;
-  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#bloccoDue .screenshot {
+  width: 768px;
+}
+
 #bloccoDue .container {
-  background-color: black;
   height: 80%;
   width: 80%;
+}
+
+#bloccoDue .container .screenshot-testodx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bloccoDue .container .screenshot-testosx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #bloccoTre {
