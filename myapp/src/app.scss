@@ -21,6 +21,11 @@
   padding: 50px 250px;
 }
 
+@mixin title-formatting{
+  font-family: 'HarmoniaSansProCyr-SemiBd';
+  font-weight: 600;
+}
+
 // COLORS
 
 $bg-primary-color: #FFFFFF;
@@ -30,6 +35,22 @@ $text-link-color: #2E4691;
 
 // FONTS SIZE
 
+h1{
+  font-size: 50px;
+  line-height: 1.4;
+}
+
+h2{
+  font-size: 1.375rem
+}
+
+li{
+  font-size: .875rem;
+  font-family: 'HarmoniaSansProCyr-SemiBd';
+  font-weight: 600;
+}
+
+
 // SIZE IMAGE width
 $img-medium-size: 280px;
 $img-large-size: 768px;
@@ -38,6 +59,10 @@ $img-large-size: 768px;
 // Regole GENERALI
 .immaginemedia{
   width: $img-medium-size;
+}
+
+body{
+  color: $text-primary-color;
 }
 
 
@@ -88,9 +113,16 @@ header {
 
     #jumbotron{
       @include my-display-flex;
+      align-items: flex-start;
+      padding: 100px 0px;
+
       .left-jumbo {
+        display: flex;
+        flex-direction: column;
 
-
+        & > :not(.link){
+          padding-bottom: 30px;
+        }
       } // left-jumbo
 
       .right-jumbo {
@@ -175,6 +207,11 @@ header {
 
   .container{
     @include my-container-dimension;
+    padding-top: 150px;
+
+    & > *{
+      padding-bottom: 150px;
+    }
 
     .screenshot-testodx{
       @include my-display-flex;
@@ -235,9 +272,11 @@ footer{
   .container{
     @include my-container-dimension;
     @include my-display-flex;
+    align-items: flex-start;
 
     .logo-bar{
       display: flex;
+      align-items: flex-start;
       width: 30%;
 
       & > *{
@@ -255,6 +294,10 @@ footer{
 
       .lista{
         line-height: 35px;
+
+        li{
+          font-weight: 200;
+        }
       }
     } //liste footer
 
